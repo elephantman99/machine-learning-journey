@@ -2,7 +2,7 @@
 """ Grid Search"""
 
 import numpy as np
-import costs as cts
+from linearRegression_gradientDescent import costs as cts
 
 
 def generate_w(num_intervals):

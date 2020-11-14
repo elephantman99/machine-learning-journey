@@ -7,7 +7,7 @@ def compute_loss(y, tx, w):
     """Calculate the loss using Mean Square Error.
    
     """
-    N = float(len(y))
+    N = len(y)
     e = y - np.dot(tx, w)
     return sum(e ** 2) / (2 * N)
 
@@ -15,8 +15,9 @@ def compute_mse(y, tx, w):
     """Calculate the loss using Mean Square Error.
    
     """
-    N = float(len(y))
-    e = y - np.dot(tx, w)
+    
+    N = len(y)
+    e = y - tx @ w
     return sum(e ** 2) / (2 * N)
     
 
@@ -25,7 +26,7 @@ def compute_mae(y, tx, w):
    
     """
     N = float(len(y))
-    e = y - np.dot(tx, w)
+    e = y - tx @ w
     return sum(np.absolute(e)) / (2 * N)
    
 def compute_rmse(y, tx, w):
