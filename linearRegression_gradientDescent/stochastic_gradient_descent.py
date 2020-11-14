@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Stochastic Gradient Descent"""
-from helpers import batch_iter
+from linearRegression_gradientDescent.helpers import batch_iter
 
 def compute_stoch_gradient(y, tx, w):
     """Compute a stochastic gradient from just few examples n and their corresponding y_n labels."""
