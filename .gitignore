@@ -3,3 +3,9 @@
 */__pycache__
 */grid_plot.png
 */visualize_polynomial_regression.png
+ridge_regression.png
+grid_plot.png
+visualize_polynomial_regression.png
+__init__.py
+.ipynb_checkpoints
+__pycache__
