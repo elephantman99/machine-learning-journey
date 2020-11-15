@@ -9,3 +9,4 @@ visualize_polynomial_regression.png
 __init__.py
 .ipynb_checkpoints
 __pycache__
+leastSquares/ex03.ipynb
