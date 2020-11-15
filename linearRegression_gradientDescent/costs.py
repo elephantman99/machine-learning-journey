@@ -39,5 +39,5 @@ def compute_rmse(y, tx, w):
 def ridge_mse(y, tx, ws, lambda_):
     """Calculate the loss using Ridge Mean Square Error.   
     """
-    return compute_mse(y, tx, ws) + lambda_ * sum(ws ** 2)
+    return compute_mse(y, tx, ws) + lambda_ * np.sum(ws ** 2)
     
