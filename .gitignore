@@ -10,3 +10,5 @@ __init__.py
 .ipynb_checkpoints
 __pycache__
 leastSquares/ex03.ipynb
+bias_variance.png
+cross_validation.png
