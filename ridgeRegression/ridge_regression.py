@@ -10,9 +10,9 @@ import numpy as np
 def ridge_regression(y, tx, lambda_):
     """implement ridge regression."""
     D = tx.shape[1]
-    ws = np.linalg.inv(tx.T @ tx + lambda_ * np.identity(D)) @ tx.T @ y
-    loss = cts.ridge_mse(y, tx, ws, lambda_)
-    return loss, ws
+    w = np.linalg.inv(tx.T @ tx + lambda_ * np.identity(D)) @ tx.T @ y
+    loss = cts.ridge_mse(y, tx, w, lambda_)
+    return loss, w
 
 def ridge_regression_demo(x, y, degree, ratio, seed, shuffle):
     """ridge regression demo."""
